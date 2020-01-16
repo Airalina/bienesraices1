@@ -87,13 +87,17 @@ h4{
     margin: 0;
 }
 /*iconos nosotros*/
+.encabezado-nosotros{
+    font-weight: 300;
+    text-align: center;
+}
 
 .iconos-nosotros{
     display: flex;
     justify-content: space-between;
 }
 .icono{
-    flex-basis: calc(33.3%-1rem); /*en %para ser responsive*/
+    flex-basis: calc(33.3%-1rem); /*en % para ser responsive*/
     text-align: center;
    
 }
