@@ -9,6 +9,11 @@ body{
 
 /*global*/
 
+img{
+    max-width: 100%;   /*lo responsive*/
+}
+
+
 .contenedor{
     max-width: 120rem; /*1200px*/
     margin: 0 auto;
@@ -34,8 +39,19 @@ h4{
 }/*utilidades*/
 
 .seccion{
+    
     margin-top: 2rem;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
+}
+
+
+.fw300{
+
+    font-weight: 300;
+}
+
+.centrar-texto{
+    text-align: center;
 }
 
 /*header*/
@@ -87,10 +103,7 @@ h4{
     margin: 0;
 }
 /*iconos nosotros*/
-.encabezado-nosotros{
-    font-weight: 300;
-    text-align: center;
-}
+
 
 .iconos-nosotros{
     display: flex;
@@ -103,4 +116,15 @@ h4{
 }
 .icono h3{
     text-transform: uppercase;
+}
+
+/*anuncios*/
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+
+}
+.anuncio{
+    flex-basis: calc(33.3%-1rem);
 }
