@@ -1,6 +1,11 @@
+
 html{
+    box-sizing: border-box;
     font-size: 62.5%; /*reset para los pixeles*/
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 body{
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem ;
@@ -53,7 +58,9 @@ h4{
 .centrar-texto{
     text-align: center;
 }
-
+.dblock{
+    display: block!important;
+}
 /*botones*/
 .boton{
     color: white;
@@ -61,8 +68,9 @@ h4{
     text-decoration: none;
     font-size: 1.8rem;
     padding: 1rem 3rem;
-    width: 10px;
-    display: block;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
 }
 .boton-amarillo{
     background-color: #E08709;
@@ -163,4 +171,129 @@ h4{
 .precio{
     color: yellowgreen;
     font-weight: 700;
+}
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-caracteristicas li{
+   /* flex: 1; */
+    display: flex;
+}
+.iconos-caracteristicas li img{
+    margin-right: 2rem;
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+/*imagen contacto*/
+.imagen-contacto{
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.contenido-contacto{
+    flex: 1;
+    color: white;
+
+}
+.contenido-contacto p{
+    font-size: 3.6;
+}
+
+/*inferior*/
+
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{
+flex-basis: 60%;
+
+}
+.seccion-inferior .testimoniales{
+flex-basis: calc(40% - 2rem);
+}
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+}
+.entrada-blog :last-of-type{
+    margin-bottom: 0;
+}
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.2;
+}
+.texto-entrada a{
+    color: black;
+    text-decoration: none;
+}
+.texto-entrada h4::after{
+    content: "";
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: yellowgreen;
+    margin-top: 1rem;
+}
+.texto-entrada span{
+    color: #E08709;
+}
+
+/*testimoniales*/
+.testimonial{
+    background-color: yellowgreen;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+}
+.testimonial p{
+    text-align: right;
+}
+.testimonial blockquote::before{
+    content: "";
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+   position: absolute;
+   left: -2rem;
+}
+.testimonial blockquote{
+    position: relative;
+    padding-left: 5rem;
+   
+}
+/*footer*/
+
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+ .copyright{
+     margin: 0;
+     color: white;
+
 }
