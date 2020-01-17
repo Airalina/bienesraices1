@@ -54,6 +54,25 @@ h4{
     text-align: center;
 }
 
+/*botones*/
+.boton{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    width: 10px;
+    display: block;
+}
+.boton-amarillo{
+    background-color: #E08709;
+
+}
+.boton-verde{
+    background-color: yellowgreen;
+
+}
+
 /*header*/
 .site-header.inicio{
 
@@ -110,7 +129,7 @@ h4{
     justify-content: space-between;
 }
 .icono{
-    flex-basis: calc(33.3%-1rem); /*en % para ser responsive*/
+    flex-basis: calc(33.3% - 1rem); /*en % para ser responsive*/
     text-align: center;
    
 }
@@ -126,5 +145,22 @@ h4{
 
 }
 .anuncio{
-    flex-basis: calc(33.3%-1rem);
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #b5b5b5;
+    background: #f5f5f5;
+
+}
+
+.contenido-anuncio{
+    padding: 2rem;
+
+}
+
+.contenido-anuncio h3, 
+.contenido-anuncio p{
+    margin: 0;
+}
+.precio{
+    color: yellowgreen;
+    font-weight: 700;
 }
