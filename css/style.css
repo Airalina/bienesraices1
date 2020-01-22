@@ -332,3 +332,9 @@ flex-basis: calc(40% - 2rem);
     justify-content: space-between;
     align-items: center;
 }
+
+/*contacto*/
+
+label{
+    display: block;
+}
