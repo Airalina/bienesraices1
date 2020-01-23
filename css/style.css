@@ -75,6 +75,10 @@ h4{
     margin-top: 3rem;
     display: inline-block;
     text-align: center;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
 }
 .boton-amarillo{
     background-color: #E08709;
@@ -334,9 +338,20 @@ flex-basis: calc(40% - 2rem);
 }
 
 /*contacto*/
+.contacto p{
+font-size: 1.2rem;
+color:grey;
+margin: 0;
+}
+legend{
+    font-size: 2rem;
+    color: #333333;
+}
 
 label{
     display: block;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 input:not([type="submit"]) , textarea, select{
     padding: 1rem;
@@ -348,6 +363,10 @@ input:not([type="submit"]) , textarea, select{
     border-radius: 1rem;
     
 }
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
 
 select{
     -webkit-appearance: none;
@@ -355,4 +374,10 @@ select{
 }
 textarea{
     height: 20rem;
+}
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
